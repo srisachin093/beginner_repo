@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/bottom_sheet_container"
+    android:background="@drawable/preferences_background"
+    android:orientation="vertical"
+
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="20dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Sort by"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp"/>
+    <RadioGroup
+        android:id="@+id/prefer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+
+        <RadioButton
+            android:id="@+id/prefer2_opt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layoutDirection="rtl"
+            android:textAlignment="textStart"
+            android:layout_gravity="start"
+            android:text="@string/nearest"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/prefer2_view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/prefer2_opt1"
+            android:background="@color/colorBlack"/>
+
+        <RadioButton
+            android:id="@+id/prefer2_opt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="10dp"
+            android:layoutDirection="rtl"
+            android:layout_below="@+id/prefer2_view1"
+            android:textAlignment="textStart"
+            android:layout_gravity="start"
+            android:text="@string/top_rated"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/prefer2_view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/prefer2_opt2"
+            android:background="@color/colorBlack"/>
+        <RadioButton
+            android:id="@+id/prefer2_opt3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="10dp"
+            android:layoutDirection="rtl"
+            android:layout_below="@+id/prefer2_view2"
+            android:textAlignment="textStart"
+            android:layout_gravity="start"
+            android:text="@string/newest"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/prefer2_view3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/prefer2_opt3"
+            android:background="@color/colorBlack"/>
+        <RadioButton
+            android:id="@+id/prefer2_opt4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="10dp"
+            android:layoutDirection="rtl"
+            android:layout_below="@+id/prefer2_view3"
+            android:textAlignment="textStart"
+            android:layout_gravity="start"
+            android:text="@string/lowest_price"
+            android:textSize="16sp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_close2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="CLOSE"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorBlack"
+        android:textColor="@color/colorWhite"/>
+
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="step_view_steps">
+        <item>Salons</item>
+        <item>Services</item>
+        <item>Slot</item>
+        <item>Confirmation</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.booking.SlotSelectionFragment">
+
+   <devs.mulham.horizontalcalendar.HorizontalCalendarView
+       android:id="@+id/calendar_view"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="5dp"
+       android:background="@color/colorPrimary"
+       app:textColorSelected="@color/colorWhite"/>
+    
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/time_slots"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calendar_view"
+        android:layout_marginTop="4dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:weightSum="2"
+
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/btn_slot_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="CANCEL"
+            android:layout_margin="4dp"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorBlack" />
+        <Button
+            android:id="@+id/btn_slot_confirm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="CONFIRM SLOT"
+            android:layout_margin="4dp"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorBlack"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

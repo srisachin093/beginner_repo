@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.booking.SalonSelectionFragment">
+
+    <LinearLayout
+        android:id="@+id/preference"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="25dp">
+        <TextView
+            android:id="@+id/preference1"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner"
+            android:padding="8dp"
+            android:text="Preference1"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_marginRight="4dp"
+            />
+        <TextView
+            android:id="@+id/preference2"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner"
+            android:padding="8dp"
+            android:text="Preference2"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_marginLeft="4dp" />
+
+
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/salon_selection_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/preference"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        />
+
+</RelativeLayout>
